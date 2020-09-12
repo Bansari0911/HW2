@@ -1,0 +1,68 @@
+<html>
+    <style>
+        .button {
+            background-color: #8b3f5c; /* Marron */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            }
+
+            .button {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #8b3f5c;
+            }
+
+            .button:hover {
+            background-color: #8b3f5c;
+            color: white;
+            }
+            
+    </style>
+    <body style="background-color: pink;"></body>
+        <title>Contact Us</title>
+
+        <h2>Contact Us</h2>
+        <h3>We are always happy to help you!</h3>
+        <label for="fname"><b>Your name:</b></label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="pwd"><b>Password:</b>></label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+
+        <h4>Gender:</h4>
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </form> 
+        <form>
+            <label for="question">I have a question about:</label>
+            <select name="products" id="questions" multiple>
+              <option value="Products">Products</option>
+              <option value="Hours">Hours</option>
+              <option value="Location">Location</option>
+              <option value="Catering">Catering</option>
+            </select>
+            <br><br>
+            <form action="/action_page.php">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+          </form>
+          <button class = "button button">
+            Submit
+          </button>
+</html>
